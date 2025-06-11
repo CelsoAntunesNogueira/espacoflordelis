@@ -1180,3 +1180,15 @@ a:focus {
     margin: 0;
     font-size: 24px;
 }
+.brand-short {
+    display: none;
+}
+
+@media (max-width: 576px) {
+    .brand-full {
+        display: none;
+    }
+    .brand-short {
+        display: inline;
+    }
+}

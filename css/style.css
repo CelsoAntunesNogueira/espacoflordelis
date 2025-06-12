@@ -280,6 +280,8 @@ a:focus {
   .hero-image {
     display: none;
   }
+   .hero-text {
+    color: #FFFFFF; 
 }
 .hero .hero-text {
     position: relative;
@@ -389,11 +391,7 @@ a:focus {
     border-top: 22px solid transparent;
     border-bottom: 22px solid transparent;
 }
-@media (max-width: 767.98px) {
-    .hero .hero-text h1 p btn {
-        color: white;
-    }
-}
+
 
 @keyframes pulse-border {
   0% {

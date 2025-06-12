@@ -38,6 +38,7 @@ a:focus {
     max-width: 90%;
     height: auto;
     margin-top: 20px;
+    text-align: center; 
   }
 }
 

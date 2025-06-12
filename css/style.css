@@ -271,10 +271,7 @@ a:focus {
     background-size: cover;
   }
 
-  .hero .hero-image {
-    display: none; /* esconde a imagem normal no mobile */
-  }
-}
+
 .hero .container-fluid {
     padding: 0;
 }

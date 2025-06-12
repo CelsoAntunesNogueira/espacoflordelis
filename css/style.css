@@ -265,18 +265,15 @@ a:focus {
     background: #fd73f6;
     overflow: hidden;
 }
-
 @media (max-width: 767.98px) {
   
-    background: url('img/heroa.png') no-repeat center center;
-    background-size: cover;
-    
-    
-    padding-top: 60px;
-    padding-bottom: 60px;
+  /* TESTE: Vamos usar uma cor sólida para ver se a regra funciona */
+  .hero {
+    background: red; 
   }
 
- 
+  /* Esconde a imagem original que está no HTML */
+  .hero-image {
     display: none;
   }
 }

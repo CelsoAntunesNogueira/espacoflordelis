@@ -265,7 +265,11 @@ a:focus {
     background: #fd73f6;
     overflow: hidden;
 }
-
+@media (max-width: 767.98px) {
+  .hero {
+    background: none !important;
+  }
+}
 .hero .container-fluid {
     padding: 0;
 }

@@ -43,22 +43,6 @@
     });
     
     
-    // Modal Video
-    $(document).ready(function () {
-        var $videoSrc;
-        $('.btn-play').click(function () {
-            $videoSrc = $(this).data("src");
-        });
-        console.log($videoSrc);
-
-        $('#videoModal').on('shown.bs.modal', function (e) {
-            $("#video").attr('src', $videoSrc + "?autoplay=1&amp;modestbranding=1&amp;showinfo=0");
-        })
-
-        $('#videoModal').on('hide.bs.modal', function (e) {
-            $("#video").attr('src', $videoSrc);
-        })
-    });
 
 
     
@@ -77,27 +61,7 @@
         portfolioIsotope.isotope({filter: $(this).data('filter')});
     });
     
-    $(document).ready(function () {
-        // 1. Inicializa o Owl Carousel principal
-        var categoryCarousel = $('.category-carousel');
-        categoryCarousel.owlCarousel({
-            loop: true,
-            margin: 30,
-            nav: false, // Desativa as setas de navegação do carrossel
-            dots: true, // Mantém os pontos de navegação
-            autoplay: false, // O carrossel principal NÃO deve rodar sozinho
-            responsive: {
-                0: {
-                    items: 1
-                },
-                768: {
-                    items: 2
-                },
-                992: {
-                    items: 3
-                }
-            }
-        });
+    
 
         // 2. Lógica para trocar as imagens DENTRO de cada slide
         setInterval(function () {
@@ -106,12 +70,11 @@
                 var $wrapper = $(this).find('.category-image-wrapper');
                 var $currentImg = $wrapper.find('img.active');
                 var $nextImg = $currentImg.next('img').length ? $currentImg.next('img') : $wrapper.find('img').first();
-
                 $currentImg.removeClass('active');
                 $nextImg.addClass('active');
             });
         }, 3000); // Troca a imagem a cada 3000ms (3 segundos)
     });
 
-})(jQuery);
+(jQuery);
 

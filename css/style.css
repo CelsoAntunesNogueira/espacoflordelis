@@ -265,46 +265,19 @@ a:focus {
     background: #fd73f6;
     overflow: hidden;
 }
+
 @media (max-width: 767.98px) {
   
-  .hero {
-   
-    
-    
     background: url('img/heroa.png') no-repeat center center;
     background-size: cover;
+    
+    
     padding-top: 60px;
     padding-bottom: 60px;
   }
 
-  
-
-  /* Garante que o conteúdo (texto e botão) fique na frente do overlay */
-  .hero .container-fluid {
-    position: relative;
-    z-index: 2;
-  }
-
-  .hero-image {
+ 
     display: none;
-  }
-}
-
-.hero .hero-image {
-    position: relative;
-    text-align: right;
-}
-
-.hero .hero-image img {
-    max-width: 80%;
-    max-height: 80%;
-}
-@media (max-width: 767.98px) {
-   .hero-image img {
-    max-width: 90%;
-    height: auto;
-    margin-top: 20px;
-    text-align: center; 
   }
 }
 

@@ -266,21 +266,17 @@ a:focus {
     overflow: hidden;
 }
 
-@media (max-width: 767.98px) {Add commentMore actions
-
-    background: url('img/heroa.png') no-repeat center center;
+@media (max-width: 767.98px) {
+  .hero {
+    /* Tente com '../' para voltar um diretório */
+    background: url('../img/heroa.png') no-repeat center center;
     background-size: cover;
     
-    
+    /* Adicione um padding para o texto não ficar colado nas bordas */
     padding-top: 60px;
     padding-bottom: 60px;
-  /* TESTE: Vamos usar uma cor sólida para ver se a regra funciona */
-  .hero {
-    background: red; 
   }
 
- 
-  /* Esconde a imagem original que está no HTML */
   .hero-image {
     display: none;
   }

@@ -280,9 +280,10 @@ a:focus {
   .hero-image {
     display: none;
   }
-   .hero-text {
+   .hero-text .btn {
     color: #FFFFFF; 
-}
+    }
+}   
 .hero .hero-text {
     position: relative;
     padding-left: 75px;
